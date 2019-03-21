@@ -984,7 +984,8 @@ end
 (** {3 Initialized Notification} *)
 module InitializedParams = struct
   type t =
-    { (* Empty? *)
+    { empty: unit
+        [@default ()]
     }
       [@@deriving yojson]
 end
